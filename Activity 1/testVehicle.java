@@ -31,10 +31,7 @@ public class testVehicle {
             System.out.println("Fuel Type: " + fuelType);
         }
     }
-    // The $SELECTION_PLACEHOLDER$ section is not meant for shell commands like `mv`. 
-    // You don't need to include file renaming commands in your Java code. 
-    // To fix the "could not find or load main class" error, ensure the file name matches the public class name (`TestVehicle`) and is in the correct directory.
-    // No changes are needed in this placeholder section.
+   
    
     static class Car extends Vehicle {
         private int numberOfDoors;
