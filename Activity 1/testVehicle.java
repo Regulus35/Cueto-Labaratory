@@ -1,6 +1,6 @@
 import java.util.Scanner;
  
-public class testVehicle {
+public class TestVehicle {
 
     static class Vehicle {
         private String brand;
