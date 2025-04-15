@@ -1,7 +1,7 @@
 import java.util.Scanner;
  
-public class TestVehicle {
-    // Base class for vehicles
+public class testVehicle {
+
     static class Vehicle {
         private String brand;
         private int speed;
@@ -31,8 +31,11 @@ public class TestVehicle {
             System.out.println("Fuel Type: " + fuelType);
         }
     }
- 
-    // Car class extending Vehicle
+    // The $SELECTION_PLACEHOLDER$ section is not meant for shell commands like `mv`. 
+    // You don't need to include file renaming commands in your Java code. 
+    // To fix the "could not find or load main class" error, ensure the file name matches the public class name (`TestVehicle`) and is in the correct directory.
+    // No changes are needed in this placeholder section.
+   
     static class Car extends Vehicle {
         private int numberOfDoors;
  
@@ -63,18 +66,17 @@ public class TestVehicle {
             System.out.println("Has Sidecar: " + (hasSidecar ? "Yes" : "No"));
         }
     }
- 
-    // Main method to run the program
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Choose the type of vehicle to enter details for:");
         System.out.println("1. Car");
         System.out.println("2. Motorcycle");
         int choice = scanner.nextInt();
-        scanner.nextLine(); // Consume the newline character
+        scanner.nextLine(); 
  
         if (choice == 1) {
-            // Car details
+            
             System.out.println("Enter Car details:");
             System.out.print("Brand: ");
             String carBrand = scanner.nextLine();
@@ -88,7 +90,7 @@ public class TestVehicle {
             System.out.println("\nCar Details:");
             car.displayInfo();
         } else if (choice == 2) {
-            // Motorcycle details
+           
             System.out.println("Enter Motorcycle details:");
             System.out.print("Brand: ");
             String motorcycleBrand = scanner.nextLine();
@@ -102,7 +104,7 @@ public class TestVehicle {
             System.out.println("\nMotorcycle Details:");
             motorcycle.displayInfo();
         } else {
-            System.out.println("Invalid choice. Please select either 1 or 2.");
+            System.out.println("Invalid , Please select either 1 or 2.");
         }
  
         scanner.close();
